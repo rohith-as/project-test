@@ -1,0 +1,42 @@
+<html>
+
+<title>C78</title>
+
+<link rel="stylesheet" href="style.css">
+<body>
+
+<h1>Family Book</h1>
+
+<img src="" id="family_member_image">
+
+<h4 id="family_member_name"></h4>
+
+<button onclick="update();">Next</button>
+</body>
+
+<script>
+
+var names = ["Ranbir Singh", "Diljeet Singh", "Rocky Singh", "Alia Singh", "Soni Singh"];
+
+var images = ["familyimage1.jpg", "familyimage2.jpg", "familyimage3.jpg", "familyimage4.jpg", "familyimage5.jpg"];
+
+var i = 0;
+
+function update() {
+
+    i++;
+    var number_of_family_member_in_array = 5
+    if (i > number_of_family_member_in_array)
+
+    {
+        i = 0;
+    }
+
+    var updatedImage = images[i];
+    var updatedName = names[i];
+    document.getElementById("family_member_image").src = updatedImage;
+    document.getElementById("family_member_name").innerHTML = updatedName;
+}
+
+</script>
+</html>

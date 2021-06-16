@@ -1,0 +1,11 @@
+body{
+
+    text-align: center;
+    background-color: blueviolet;
+}
+
+#family_member_image {
+
+    width: 400;
+    height: 400;
+}
